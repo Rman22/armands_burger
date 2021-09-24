@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Js 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="relative z-50" id="cart">
+        <div class="xl:mx-64  z-40 lg:mx-32 md:mx-12  ">
+            <div class="pt-6 pb-2 px-6 flex items-center justify-between shadow-md border-b">
+                <a href="index.html" class="outline-none"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pallete6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg></a>
+                <h1 class="myCart text-pallete6 text-3xl font-semibold">My Cart</h1>
+                <a href="cart.html" class="outline-none">
+                    <div class=" rounded-md bg-pallete6">
+                        <div class="relative p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pallete3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                              </svg>
+                              <div class="absolute -top-3 -right-3 text-pallete6 bg-pallete1 rounded-full w-5 h-5 flex justify-center items-center text-xs">2</div>
+                        </div>   
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="mx-5 py-5">
+                    <div class="grid grid-cols-8 text-lg text-center font-semibold text-gray-400">
+                        <h2 class="col-span-3 flex justify-start items-center pl-5 ">Product</h2>
+                        <h2 class="col-span-2 ">Qty</h2>
+                        <h2 class="col-span-2 ">Price</h2>
+                        <div class=""></div>
+                    </div>
+                    <div class="cart-items grid py-2 grid-cols-8 text-center mt-5 border-b shadow-md border-gray-100">
+                        <div class="col-span-3 w-40">
+                            <div>
+                                <img class="h-full w-full object-contain px-7" src="img/Burger-Junk-Food-PNG-Photos.png" alt="">
+                             </div>
+                             <div class="flex w-full justify-center items-center">
+                                 <div>
+                                    <p class="py-2 text-base font-semibold">Beef Burger</p>
+                                    <p class="text-sm text-gray-500">₱100</p>
+                                 </div>
+                                
+                             </div>
+                             
+                        </div>
+                        <div class="cart-item-counter col-span-2 flex justify-center items-center">
+                            <div class="grid gap-2">
+                                <div class=" cursor-pointer text-gray-100 bg-pallete6 rounded h-6 w-6 flex justify-center items-center hover:bg-white ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                                      </svg>                           
+                                </div>
+                                
+                                <h4 class="text-gray-700 font-semibold">x1</h4>
+                                <div class="cursor-pointer text-gray-100 bg-pallete6 rounded h-6 w-6 flex justify-center items-center hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                      </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-2 flex text-gray-800  justify-center items-center">
+                            <p>₱100</p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                          </svg>
+                        </div>
+                       
+                    </div>
+                    <div class="cart-items grid py-2 grid-cols-8 text-center mt-5 border-b shadow-md border-gray-100">
+                        <div class="col-span-3 w-40">
+                            <div>
+                                <img class="h-full w-full object-contain px-7" src="img/Burger-Junk-Food-PNG-Photos.png" alt="">
+                             </div>
+                             <div class="flex w-full justify-center items-center">
+                                 <div>
+                                    <p class="py-2 text-base font-semibold">Beef Burger</p>
+                                    <p class="text-sm text-gray-500">₱100</p>
+                                 </div>
+                                
+                             </div>
+                             
+                        </div>
+                        <div class="cart-item-counter col-span-2 flex justify-center items-center">
+                            <div class="grid gap-2">
+                                <div class=" cursor-pointer text-gray-100 bg-pallete6 rounded h-6 w-6 flex justify-center items-center hover:bg-white ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                                      </svg>                           
+                                </div>
+                                
+                                <h4 class="text-gray-700 font-semibold">x1</h4>
+                                <div class="cursor-pointer text-gray-100 bg-pallete6 rounded h-6 w-6 flex justify-center items-center hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                      </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-span-2 flex text-gray-800  justify-center items-center">
+                            <p>₱100</p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                          </svg>
+                        </div>
+                       
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="flex justify-end mr-5">
+                <div class="flex justify-end">
+                    <div class="grid grid-rows-2 ">
+                        <div class="mr-10 gap-10 flex justify-end items-center">
+                            <p class="text-xl">Total:</p>
+                            <p class="text-gray-500">₱100</p>
+                        </div>
+                       <div class="mr-10 gap-10 flex justify-center items-center">
+                            <p class="text-xl">Delivery Fee:</p>
+                            <p class="text-gray-500">₱100</p>
+                        </div>
+                    </div>
+                   
+                    <button class="outline-none hover:bg-white cursor-pointer py-4 menuTransistion hover:text-pallete6 hover:border-pallete6  bg-pallete6 text-pallete3 px-4 rounded-full">Complete Order</button>   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="absolute z-20 flex justify-center items-center opacity-30 top-0 right-0 left-0 bottom-0">
+        <img class="" src="img/undraw_Hamburger_8ge6.svg" alt="">
+    </div>
+    <div class="flex justify-center  items-center mt-64 bg-opacity-70 bg-pallete6 h-20">
+        <div class="flex text-gray-800 items-end justify-center">
+            <p>© Copyright Armand 2022</p>
+        </div>
+    </div>
+ 
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ7_Iw_MVS_i7PHj0L6KUuTAvvS3OYgfw&callback=initMap&libraries=&v=weekly"async></script> -->
+<script src="../node_modules/animejs/lib/anime.min.js"></script>
+<script src="animation.js"></script>
+</body>
+</html>
