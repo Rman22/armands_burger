@@ -6,7 +6,7 @@ $(window).on("load", function(){
 
 ///////////sidebar menu
 function openMenu(){
-        document.getElementById("rightMenu").style.width = "83.3333%";
+        document.getElementById("rightMenu").style.width = "100%";
 
     }
     function closeMenu(){
