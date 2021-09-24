@@ -4,7 +4,9 @@ anime({
         translateX: 500,
         direction: 'reverse',
         easing: 'linear',
-        duration: 1400,
+        duration: 2000,
+        loop: true,
+        delay:1000
 
     
       });
