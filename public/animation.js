@@ -3,7 +3,7 @@ anime({
         translateX: 500,
         direction: 'reverse',
         easing: 'linear',
-        duration: 1500,
+        duration: 1400,
 
     
       });
