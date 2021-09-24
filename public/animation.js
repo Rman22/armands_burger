@@ -1,22 +1,22 @@
 
-anime({
-        targets: '.homeImage',
-        translateX: 500,
-        direction: 'reverse',
-        easing: 'linear',
-        duration: 2000,
-        loop: true,
-        delay:1000
-
-    
-      });
 window.sr = ScrollReveal();
+sr.reveal('.homeImage',{
+    duration: 1000,
+    reset: true,
+    delay: 500,
+    origin: 'right',
+    easing: 'ease-out',
+    distance: '250px',
+    opacity: 0
+
+});  
+
     sr.reveal('.aboutBurger',{
     duration: 1000,
     reset: true,
     delay: 500,
     origin: 'top',
-    easing: 'ease-in',
+    easing: 'ease-out',
     distance: '250px',
     opacity: 0
 
