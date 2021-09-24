@@ -207,7 +207,7 @@ function addMenus(data){
                         
                         <div class="bg-white px-3 py-2  ">
                             <h2 class="text-lg text-gray-700 font-semibold">${data[i].burgerName}</h2>
-                            <p>${data[i].burgerInclusion}</p>
+                            <p>₱${data[i].burgerInclusion}</p>
                             
                         </div>
                         <div class="cartDiv flex justify-between bg-pallete6 rounded-b-lg px-5">
