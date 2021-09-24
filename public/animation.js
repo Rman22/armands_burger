@@ -1,12 +1,12 @@
-anime({
-        targets: '.homeImage',
-        translateX: 500,
-        direction: 'reverse',
-        easing: 'linear',
-        duration: 1400,
+// anime({
+//         targets: '.homeImage',
+//         translateX: 500,
+//         direction: 'reverse',
+//         easing: 'linear',
+//         duration: 1400,
 
     
-      });
+//       });
 window.sr = ScrollReveal();
     sr.reveal('.aboutBurger',{
     duration: 1000,
