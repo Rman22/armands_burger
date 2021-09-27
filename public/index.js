@@ -1,8 +1,8 @@
 ///////////loading
-$(window).on("load", function(){
-    $(".loader").fadeOut(100);
-    $(".toLoad").fadeIn(100 );
-})
+// $(window).on("load", function(){
+//     $(".loader").fadeOut(100);
+//     $(".toLoad").fadeIn(100 );
+// })
 
 ///////////sidebar menu
 function openMenu(){
@@ -190,12 +190,15 @@ function searchMenus(value, data){
     return filteredMenus
 }
 
-const getMenus = document.getElementById("getMenus")
+
 function addMenus(data){
     const getMenus = document.getElementById("getMenus")
     const getPromos = document.getElementById("getPromos")
+    const displayMenus = document.getElementById("displayMenus")
+    const displayPromos = document.getElementById("displayPromos")
     getMenus.innerHTML=''
     getPromos.innerHTML=''
+
     for (let i = 0; i < data.length; i++){
         if (data[i].promo === true){
             let menus = 
@@ -220,6 +223,8 @@ function addMenus(data){
                     </div>
             `
             getMenus.innerHTML += menus 
+            displayMenus.innerHTML += menus
+           
       
         }
         else {
@@ -248,21 +253,24 @@ function addMenus(data){
                 `
           
                 getPromos.innerHTML += promos
+                displayPromos.innerHTML += promos
             
         }
         
-        // const addToCart =  getMenus.querySelector(".cartDiv .cartBtn")
-    
-        // addToCart.addEventListener("click", function() {
-        //   console.log("add", data[i])
-            
-        // })
 
     }
 
 }
 
-
+const searchResult = document.getElementById("menus")
+const searchBtn = document.getElementById("searchBtn")
+const closeResult = document.getElementById("closeResult")
+searchBtn.addEventListener("click",() =>{
+    searchResult.style.display="block"
+})
+closeResult.addEventListener("click", () => {
+    searchResult.style.display="none"
+})
 
 
 
