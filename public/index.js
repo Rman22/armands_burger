@@ -1,8 +1,8 @@
-///////////loading
-// $(window).on("load", function(){
-//     $(".loader").fadeOut(100);
-//     $(".toLoad").fadeIn(100 );
-// })
+/////////loading
+$(window).on("load", function(){
+    $(".loader").fadeOut(100);
+    $(".toLoad").fadeIn(100 );
+})
 
 ///////////sidebar menu
 function openMenu(){
